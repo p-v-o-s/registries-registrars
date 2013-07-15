@@ -1,0 +1,8 @@
+import csv
+import json
+
+with open('rr1.csv','rb') as csvfile:
+    spamreader = csv.reader(csvfile,delimiter=';')
+    for row in spamreader:
+        print row[4]
+#        print ', '.join(row)
